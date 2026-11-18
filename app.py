@@ -15,7 +15,6 @@ def main():
 
 @app.route("/dbs", methods=["GET", "POST"])
 def dbs():
-    q = request.form.get("q")
     return(render_template("dbs.html"))
 
 if __name__ == "__main__":
